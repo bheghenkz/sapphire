@@ -3,7 +3,7 @@ export green="\e[0;32m"
 export NC="\e[0m"
 
 # // GIT USER
-export GitUser="NevermoreSSH"
+export GitUser="bheghenkz"
 export MYIP=$(wget -qO- icanhazip.com);
 MYIP=$(curl -s ipinfo.io/ip )
 MYIP=$(curl -sS ipv4.icanhazip.com)
