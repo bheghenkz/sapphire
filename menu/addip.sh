@@ -24,7 +24,7 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 MYIP=$(curl -s ipinfo.io/ip )
 MYIP=$(curl -sS ipv4.icanhazip.com)
 MYIP=$(curl -sS ifconfig.me )
-adminip=$( curl -sS https://raw.githubusercontent.com/NevermoreSSH/allow/main/accessmenu | grep $MYIP )
+adminip=$( curl -sS https://raw.githubusercontent.com/bheghenkz/allow/main/accessmenu | grep $MYIP )
 if [ $adminip = $MYIP ]; then
 echo -e "${green}Permission Accepted...${NC}"
 else
@@ -37,7 +37,7 @@ fi
 
 setadmin() {
 #isi link git
-linkinstall="https://raw.githubusercontent.com/NevermoreSSH/allow/main"
+linkinstall="https://raw.githubusercontent.com/bheghenkz/allow/main"
 rm -rf /etc/adminip/
 mkdir -p /etc/adminip
 read -p "INPUT OWNER ACCESS TOKEN CODE " ans
@@ -67,7 +67,7 @@ rm -rf /root/allow
 read -p " - IP VPS      : " daftar
 echo -e "[ ${Lyellow}INFO${NC} ] Checking the IPVPS if Already Registered"
 sleep 1
-cek=$( curl -sS https://raw.githubusercontent.com/NevermoreSSH/allow/main/ipvps.conf | awk '{print $5}' | grep $daftar )
+cek=$( curl -sS https://raw.githubusercontent.com/bheghenkz/allow/main/ipvps.conf | awk '{print $5}' | grep $daftar )
 if [[ $daftar = $cek ]]; then
 echo -e "\e[1;31m The IP VPS Has Been Registered\e[0m"
 sleep 2
