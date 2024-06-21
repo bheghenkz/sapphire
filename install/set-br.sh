@@ -1,6 +1,7 @@
 #wget https://github.com/${GitUser}/
 GitUser="bheghenkz"
-curl https://rclone.org/install.sh | bash
+#curl https://rclone.org/install.sh | bash
+apt install rclone -y
 printf "q\n" | rclone config
 wget -O /root/.config/rclone/rclone.conf "https://raw.githubusercontent.com/${GitUser}/sapphire/main/rclone.conf"
 git clone  https://github.com/MrMan21/wondershaper.git &> /dev/null
