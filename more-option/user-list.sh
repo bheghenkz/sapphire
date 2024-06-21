@@ -1,6 +1,6 @@
 # Created by NevermoreSSH
 #wget https://github.com/${GitUser}/
-GitUser="NevermoreSSH"
+GitUser="bheghenkz"
 #IZIN SCRIPT
 MYIP=$(curl -sS ipv4.icanhazip.com)
 MYIP=$(curl -s ipinfo.io/ip )
