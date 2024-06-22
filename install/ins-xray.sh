@@ -69,7 +69,7 @@ systemctl stop nginx
 
 # // INSTALL CERTIFICATES
 mkdir /root/.acme.sh
-curl https://raw.githubusercontent.com/NevermoreSSH/sapphire/main/acme.sh -o /root/.acme.sh/acme.sh
+curl https://raw.githubusercontent.com/bheghenkz/sapphire/main/acme.sh -o /root/.acme.sh/acme.sh
 chmod +x /root/.acme.sh/acme.sh
 /root/.acme.sh/acme.sh --upgrade --auto-upgrade
 /root/.acme.sh/acme.sh --set-default-ca --server letsencrypt
